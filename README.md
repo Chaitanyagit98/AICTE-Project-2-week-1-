@@ -14,7 +14,7 @@ npm -v
 
 2️⃣ Installation
 Clone the repository-
-git clone https://github.com/HarshCraft/AICTE-Internship-Task-1.git
+git clone https://github.com/Chaitanyagit98/AICTE-Project-2-week-1-
 Navigate to the project directory
 cd AICTE-Internship-Task-1
 Install dependencies
