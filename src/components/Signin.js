@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function Signin() {
-  const [username, setUsername] = useState('');
+  const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
@@ -13,12 +13,13 @@ function Signin() {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:5001/signin', { username, password });
+      const res = await axios.post('http://localhost:5001/signin', { phone, password });
       console.log('Signin Response:', res.data);
-
+      
       if (res.data.token) {
         localStorage.setItem('authToken', res.data.token);
-        navigate('/dashboard'); // Redirect to dashboard
+        alert('Signin successful! Redirecting to dashboard.');
+        navigate('/dashboard');
       } else {
         setError('Invalid credentials');
       }
@@ -34,10 +35,10 @@ function Signin() {
       {error && <p className="error">{error}</p>}
       <form onSubmit={handleSignin}>
         <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          type="tel"
+          placeholder="Phone Number"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
           required
         />
         <input
