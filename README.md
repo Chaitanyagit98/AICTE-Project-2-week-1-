@@ -10,6 +10,7 @@ npm (Comes with Node.js) or yarn
 To check if you have Node.js and npm installed, run:
 node -v
 npm -v
+
 2️⃣ Installation
 Clone the repository-
 git clone https://github.com/HarshCraft/AICTE-Internship-Task-1.git
