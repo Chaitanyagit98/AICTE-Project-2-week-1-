@@ -2,6 +2,7 @@ AICTE Internship Task 1 - React App
 This project is built using React.js, bootstrapped with Create React App. It serves as a frontend application for your internship task, leveraging React components, state management, and modern UI development practices.
 
 🚀 Getting Started
+
 1️⃣ Prerequisites
 Ensure you have the following installed before running the project:
 
